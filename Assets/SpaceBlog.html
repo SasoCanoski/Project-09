@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Project02</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Front-end Academy  2019" />
+    <meta name="keyword" content="html,css,javascript" />
+    <meta name="author" content="Saso Canoski" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid con-flu">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-12"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <button
+            class="navbar-right btn btn-default btn-responsive new-btn"
+            data-toggle="modal"
+            data-target="#myModal"
+          >
+            + ПРИКЛУЧИ СЕ
+          </button>
+          <a href="../index.html"
+            ><img
+              class="nav-img"
+              src="../Assets/images/brainster_space_logo.svg"
+              alt=""
+          /></a>
+        </div>
+
+        <div
+          class="collapse navbar-collapse"
+          id="bs-example-navbar-collapse-12"
+        >
+          <ul class="nav navbar-nav ul-1">
+            <li class="font-weight-bold">
+              <a href="#"
+                ><strong>SPACE БЛОГ</strong>
+                <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li>
+              <a href="calendar.html"><strong>НАСТАНИ</strong></a>
+            </li>
+            <li>
+              <a href="#"><strong>CO-WORKING</strong></a>
+            </li>
+            <li>
+              <a href="academies.html"><strong>АКАДЕМИИ</strong></a>
+            </li>
+            <li>
+              <a href="event.html"><strong>ПРОСТОР ЗА НАСТАНИ</strong></a>
+            </li>
+            <li>
+              <a href="#"><strong>ПАРТНЕРСТВА</strong></a>
+            </li>
+          </ul>
+          <button
+            class="navbar-right btn btn-default btn1-nav btn-responsive"
+            data-toggle="modal"
+            data-target="#myModal"
+          >
+            + ПРИКЛУЧИ СЕ
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Navbar-2 -->
+
+    <nav class="navbar navbar-default navbar-fixed-top newNavBar">
+      <div class="container-fluid con-flu">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed burger-2"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-11"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div
+          class="collapse navbar-collapse"
+          id="bs-example-navbar-collapse-11"
+        >
+          <ul class="nav navbar-nav">
+            <li class="nav-2">
+              <a href=""><strong>ФИЛТРИРАЈ</strong> </a>
+            </li>
+            <li id="site">
+              <a href=""><strong>СИТЕ</strong></a>
+            </li>
+            <li id="kariera">
+              <a href=""><strong>КАРИЕРА</strong></a>
+            </li>
+            <li id="tehnologija">
+              <a href=""><strong>ТЕХНОЛОГИЈА</strong></a>
+            </li>
+            <li id="data-science">
+              <a href=""><strong>DATA SCIENCE</strong></a>
+            </li>
+            <li id="marketing">
+              <a href=""><strong>МАРКЕТИНГ</strong></a>
+            </li>
+            <li id="dizajn">
+              <a href=""><strong>ДИЗАЈН</strong></a>
+            </li>
+            <li id="impact">
+              <a href=""><strong>IMPACT</strong></a>
+            </li>
+            <li>
+              <a
+                class="li-2"
+                href="https://medium.com/wearelaika/brainster-space-the- New-home-of-the-local-tech-community- In-skopje-ffe97b564152"
+                target="_blank"
+                ><strong>#SpaceFamily</strong></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Forma -->
+    <div
+      id="myModal"
+      class="modal fade modal-bg-img-1"
+      tabindex="-1"
+      role="dialog"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content modal-bg-img">
+          <div class="modal-header">
+            <h4 class="modal-title"><strong>BrainsterSpace</strong></h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleName">Име</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleName"
+                  placeholder="Име"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleSurname2">Презиме</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleSurname2"
+                  placeholder="Презиме"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleEmail">Емаил Адреса</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleEmail"
+                  placeholder="Емаил Адреса"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-default btn-form-close"
+              data-dismiss="modal"
+            >
+              Исклучи
+            </button>
+            <button type="button" class="btn btn-default btn1-nav">
+              + ПРИКЛУЧИ СЕ
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- KARTICKI  vo slajder-->
+
+    <div class="container-fluid">
+      <div class="row">
+        <div
+          id="carousel-example-generic"
+          class="carousel slide"
+          data-ride="carousel"
+          data-interval="7000"
+        >
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <a href="#">
+                <img src="../Assets/images/1science.png" alt="" />
+                <div class="carousel-caption">
+                  <p class="text-11">КАРИЕРА</p>
+                  <h1 class="text-left">
+                    Deep Dive семинари кои ќе овозможуваат брз кариерен напредок
+                  </h1>
+                  <p class="text-left">
+                    Нов продукт од Brainster во Brainster Space. Интензивни
+                    дводневни семинари кои ќе ти помогнат од Mid Level <br />
+                    брзо да го постигнеш твојот Senior напредок.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-default pull-left btn-carousel"
+                  >
+                    <span
+                      class="glyphicon glyphicon-arrow-right"
+                      aria-hidden="true"
+                    ></span>
+                    Дознај повеќе
+                  </button>
+                </div>
+              </a>
+            </div>
+
+            <div class="item">
+              <a href="#">
+                <img src="../Assets/images/black.jpg" alt="" />
+
+                <div class="carousel-caption">
+                  <p class="text-11">КАРИЕРА</p>
+                  <h1 class="text-left">
+                    Ако не те бива за програмирање дали можеш да имаш кариера во
+                    Tech?
+                  </h1>
+                  <p class="text-left">
+                    Tech индустријата е најпосакувана област за работа, заради
+                    големата побарувачка, секојдневните промени и големиот
+                    инкам.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-default pull-left btn-carousel"
+                  >
+                    <span
+                      class="glyphicon glyphicon-arrow-right"
+                      aria-hidden="true"
+                    ></span>
+                    Дознај повеќе
+                  </button>
+                </div>
+              </a>
+            </div>
+
+            <div class="item">
+              <a href="#">
+                <img src="../Assets/images/C1 4.jpg" alt="" />
+
+                <div class="carousel-caption">
+                  <p class="text-11">ТЕХНОЛОГИЈА</p>
+                  <h1 class="text-left">
+                    Што значи денес, твојата канцеларија да е smart?
+                  </h1>
+                  <p class="text-left">
+                    На отворањето на Brainster Space, добивме супер
+                    подарок-smart home уред. Голем дел од нас беа збунети за тоа
+                    што се можеме да добиеме со него.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-default pull-left btn-carousel"
+                  >
+                    <span
+                      class="glyphicon glyphicon-arrow-right"
+                      aria-hidden="true"
+                    ></span>
+                    Дознај повеќе
+                  </button>
+                </div>
+              </a>
+            </div>
+
+            <div class="item">
+              <a href="">
+                <img
+                  src="../Assets/images/1_xX6Cpskem0SbqQuPZ8R-4g.jpeg"
+                  alt=""
+                />
+
+                <div class="carousel-caption">
+                  <p class="text-11">DATA SCIENCE</p>
+                  <h1 class="text-left">Како до кариера во Data Science?</h1>
+                  <p class="text-left">
+                    Од искуството на студентите на нашата академија, решивме да
+                    ви помогнеме со неколку tips за потребите на skills за да
+                    започнете да работите Data Science.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-default pull-left btn-carousel"
+                  >
+                    <span
+                      class="glyphicon glyphicon-arrow-right"
+                      aria-hidden="true"
+                    ></span>
+                    Дознај повеќе
+                  </button>
+                </div>
+              </a>
+            </div>
+
+            <div class="item">
+              <a href="#">
+                <img src="../Assets/images/Инструктор.jpg" alt="" />
+
+                <div class="carousel-caption">
+                  <p class="text-11">МАРКЕТИНГ</p>
+                  <h1 class="text-left">
+                    Интервју со Николај Ванчев, арт директор во Tank, Estonia.
+                    #SpaceFamily
+                  </h1>
+                  <p class="text-left">
+                    Николај Ванчев е Creative director во Tank (Естонија).
+                    Неговата успешна 12 годишна кариера како арт директор тој ја
+                    гради во реномирани агенции...
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-default pull-left btn-carousel"
+                  >
+                    <span
+                      class="glyphicon glyphicon-arrow-right"
+                      aria-hidden="true"
+                    ></span>
+                    Дознај повеќе
+                  </button>
+                </div>
+              </a>
+            </div>
+
+            <div class="item">
+              <a href="#">
+                <img src="../Assets/images/dijana.png" alt="" />
+
+                <div class="carousel-caption">
+                  <p class="text-11">ДИЗАЈН</p>
+                  <h1 class="text-left">
+                    Зошто дизајн, накратко со Дијана Димитриевска. #SpaceFamily
+                  </h1>
+                  <p class="text-left">
+                    Интервју со Дијана Димитриевска, графички дизајнер, DJ и
+                    инструктор на Академијата за графички дизајн во Brainster.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-default pull-left btn-carousel"
+                  >
+                    <span
+                      class="glyphicon glyphicon-arrow-right"
+                      aria-hidden="true"
+                    ></span>
+                    Дознај повеќе
+                  </button>
+                </div>
+              </a>
+            </div>
+
+            <div class="item">
+              <a href="#">
+                <img src="../Assets/images/UXUI-Design.jpg" alt="" />
+
+                <div class="carousel-caption">
+                  <p class="text-11">ДИЗАЈН</p>
+                  <h1 class="text-left">
+                    Што е потребно за добар мобилен дизајн
+                  </h1>
+                  <p class="text-left">
+                    UX/UI дизајнерите се дигитални продукт дизајнери. Нивната
+                    задача е да создаваат корисен, релевантен и едноставен за
+                    корисниците продукт.
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-default pull-left btn-carousel"
+                  >
+                    <span
+                      class="glyphicon glyphicon-arrow-right"
+                      aria-hidden="true"
+                    ></span>
+                    Дознај повеќе
+                  </button>
+                </div>
+              </a>
+            </div>
+
+            <div class="item">
+              <a href="#">
+                <img src="../Assets/images/upshift.jpg" alt="" />
+
+                <div class="carousel-caption">
+                  <p class="text-11">IMPACT</p>
+                  <h1 class="text-left">
+                    Македонско-американската компанија Upshift доби инвестиција
+                    од 3.7 милиони...
+                  </h1>
+                  <p class="text-left">
+                    Он-дименд платформата за работа се шири со нова рунда
+                    финансирање предводена од Recruit која е најголемата HR Tech
+                    компанија во светот...
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-default pull-left btn-carousel"
+                  >
+                    <span
+                      class="glyphicon glyphicon-arrow-right"
+                      aria-hidden="true"
+                    ></span>
+                    Дознај повеќе
+                  </button>
+                </div>
+              </a>
+            </div>
+
+            <div class="item">
+              <a href="#">
+                <img
+                  src="../Assets/images/20191128_141433810_iOS-1200x600.jpg"
+                  alt=""
+                />
+
+                <div class="carousel-caption">
+                  <p class="text-11">IMPACT</p>
+                  <h1 class="text-left">
+                    Локалната апликација Challenger и нејзиниот импакт.
+                    #SpaceFamily
+                  </h1>
+                  <p class="text-left">
+                    Мисијата на Challenger е создавање општествено одговорна
+                    заедница која создава позитивна промена преку развивање на
+                    подобри индивидуални навики...
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-default pull-left btn-carousel"
+                  >
+                    <span
+                      class="glyphicon glyphicon-arrow-right"
+                      aria-hidden="true"
+                    ></span>
+                    Дознај повеќе
+                  </button>
+                </div>
+              </a>
+            </div>
+
+            <div id="carousel-index"></div>
+
+            <i
+              class="fa fa-arrow-left fa-left"
+              href="#carousel-example-generic"
+              role="button"
+              data-slide="prev"
+            ></i>
+            <i
+              class="fa fa-arrow-right fa-right"
+              href="#carousel-example-generic"
+              role="button"
+              data-slide="next"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- KARTICKI -->
+    <div class="container-fluid padding1">
+      <div class="row">
+        <div class="col-md-4 col-sm-6 morph kariera-1">
+          <a href="#" target="_blank" class="A-decoration">
+            <div class="thumbnail">
+              <img src="./images/1science.png" alt="..." />
+              <div class="caption">
+                <h4>
+                  <strong
+                    >Deep Dive семинари кои ќе овозможуваат брз кариерен
+                    напредок</strong
+                  >
+                </h4>
+                <p>
+                  Нов продукт од Brainster во Brainster Space. Интензивни
+                  дводневни семинари кои ќе ти помогнат од Mid Level брзо да го
+                  постигнеш твојот Senior напредок.
+                </p>
+
+                <div class="text-right div-i">
+                  <p class="text-1">КАРИЕРА</p>
+                  <i class="fa fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4 col-sm-6 morph kariera-1">
+          <a href="#" target="_blank" class="A-decoration">
+            <div class="thumbnail">
+              <img src="./images/black.jpg" alt="..." />
+              <div class="caption">
+                <h4>
+                  <strong
+                    >Ако не те бива за програмирање дали можеш да имаш кариера
+                    во Tech?
+                  </strong>
+                </h4>
+                <p>
+                  Tech индустријата е најпосакувана област за работа, заради
+                  големата побарувачка, секојдневните промени и големиот инкам.
+                </p>
+
+                <div class="text-right div-i">
+                  <p class="text-1">КАРИЕРА</p>
+
+                  <i class="fa fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4 col-sm-6 morph" id="tehnologija-1">
+          <a href="#" target="_blank" class="A-decoration">
+            <div class="thumbnail">
+              <img src="./images/C1 4.jpg" alt="..." />
+              <div class="caption">
+                <h4>
+                  <strong
+                    >Што значи денес, твојата канцеларија да е smart?</strong
+                  >
+                </h4>
+                <p>
+                  На отворањето на Brainster Space, добивме супер подарок-smart
+                  home уред. Голем дел од нас беа збунети за тоа што се можеме
+                  да добиеме со него.
+                </p>
+
+                <div class="text-right div-i">
+                  <p class="text-1">ТЕХНОЛОГИЈА</p>
+
+                  <i class="fa fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4 col-sm-6 morph" id="data-science-1">
+          <a href="#" target="_blank" class="A-decoration">
+            <div class="thumbnail">
+              <img src="./images/1_xX6Cpskem0SbqQuPZ8R-4g.jpeg" />
+              <div class="caption">
+                <h4><strong>Како до кариера во Data Science?</strong></h4>
+                <p>
+                  Од искуството на студентите на нашата академија, решивме да ви
+                  помогнеме со неколку tips за потребите на skills за да
+                  започнете да работите Data Science.
+                </p>
+
+                <div class="text-right div-i">
+                  <p class="text-1">DATA SCIENCE</p>
+                  <i class="fa fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4 col-sm-6 morph" id="marketing-1">
+          <a href="#" target="_blank" class="A-decoration">
+            <div class="thumbnail">
+              <img src="./images/Инструктор.jpg" alt="..." />
+              <div class="caption">
+                <h4>
+                  <strong
+                    >Интервју со Николај Ванчев, арт директор во Tank, Estonia.
+                    <br />
+                    #SpaceFamily</strong
+                  >
+                </h4>
+                <p>
+                  Николај Ванчев е Creative director во Tank (Естонија).
+                  Неговата успешна 12 годишна кариера како арт директор тој ја
+                  гради во реномирани агенции...
+                </p>
+
+                <div class="text-right div-i">
+                  <p class="text-1">МАРКЕТИНГ</p>
+
+                  <i class="fa fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4 col-sm-6 morph dizajn-1">
+          <a href="#" target="_blank" class="A-decoration">
+            <div class="thumbnail">
+              <img src="./images/dijana.png" alt="..." />
+              <div class="caption">
+                <h4>
+                  <strong
+                    >Зошто дизајн, накратко со <br />
+                    Дијана Димитриевска. #SpaceFamily</strong
+                  >
+                </h4>
+                <p>
+                  Интервју со Дијана Димитриевска, графички дизајнер, DJ и
+                  инструктор на Академијата за графички дизајн во Brainster.
+                </p>
+
+                <div class="text-right div-i">
+                  <p class="text-1">ДИЗАЈН</p>
+
+                  <i class="fa fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4 col-sm-6 morph dizajn-1">
+          <a href="#" target="_blank" class="A-decoration">
+            <div class="thumbnail">
+              <img src="./images/UXUI-Design.jpg" alt="..." />
+              <div class="caption">
+                <h4><strong>Што е потребно за добар мобилен дизајн</strong></h4>
+                <p>
+                  UX/UI дизајнерите се дигитални продукт дизајнери. Нивната
+                  задача е да создаваат корисен, релевантен и едноставен за
+                  корисниците продукт.
+                </p>
+
+                <div class="text-right div-i">
+                  <p class="text-1">ДИЗАЈН</p>
+                  <i class="fa fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4 col-sm-6 morph impact-1">
+          <a href="#" target="_blank" class="A-decoration">
+            <div class="thumbnail">
+              <img src="./images/upshift.jpg" alt="..." />
+              <div class="caption">
+                <h4>
+                  <strong
+                    >Македонско-американската компанија Upshift доби инвестиција
+                    од 3.7 милиони...</strong
+                  >
+                </h4>
+                <p>
+                  Он-дименд платформата за работа се шири со нова рунда
+                  финансирање предводена од Recruit која е најголемата HR Tech
+                  компанија во светот...
+                </p>
+
+                <div class="text-right div-i">
+                  <p class="text-1">IMPACT</p>
+
+                  <i class="fa fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4 col-sm-6 morph impact-1">
+          <a href="#" target="_blank" class="A-decoration">
+            <div class="thumbnail">
+              <img
+                src="./images/20191128_141433810_iOS-1200x600.jpg"
+                alt="..."
+              />
+              <div class="caption">
+                <h4>
+                  <strong
+                    >Локалната апликација Challenger и нејзиниот импакт.
+                    #SpaceFamily</strong
+                  >
+                </h4>
+                <p>
+                  Мисијата на Challenger е создавање општествено одговорна
+                  заедница која создава позитивна промена преку развивање на
+                  подобри индивидуални навики...
+                </p>
+
+                <div class="text-right div-i">
+                  <p class="text-1">IMPACT</p>
+
+                  <i class="fa fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- KONTAKT -->
+    <div class="container-fluid">
+      <div class="row r-1">
+        <div class="col-md-1 col-1">
+          <img
+            class="logo-1"
+            src="../Assets/images/brainster_space_logo.svg"
+            alt=""
+          />
+        </div>
+        <div class="col-md-2 col-sm-3 end-contact">
+          <p><strong>Корисни линкови</strong></p>
+
+          <p
+            data-toggle="modal"
+            data-target="#modal-sm"
+            style="cursor: pointer; margin: 0; font-style: italic;"
+          >
+            Контакт
+          </p>
+          <div
+            id="modal-sm"
+            class="modal fade"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="myModalLabel"
+          >
+            <div class="modal-dialog modal-sm" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <h4 class="modal-title" id="myModalLabel">
+                    <strong>Контакт</strong>
+                  </h4>
+                </div>
+                <div class="modal-body">
+                  <p><strong>Емаил: anja@brainster.co</strong></p>
+                  <p><strong>Телефон: 070 233 414 </strong></p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-default"
+                    data-dismiss="modal"
+                    style="background-color: red; color: black; outline: unset;"
+                  >
+                    Исклучи
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://www.wearelaika.com/" target="_blank"
+            >Отворени Позиции</a
+          >
+          <a
+            href="https://medium.com/wearelaika/brainster-space-the-new-home-of-the-local-tech-community-in-skopje-ffe97b564152
+          "
+            target="_blank"
+            >Галерија</a
+          >
+          <a href="calendar.html" target="_blank" class="kalendar">Календар</a>
+        </div>
+
+        <div class="col-md-2 col-sm-3">
+          <p><strong>Социјални Мрежи</strong></p>
+          <a href="#"><i class="fa fa-facebook social fa-2x"></i> </a>
+          <a href=""><i class="fa fa-linkedin fa-2x"></i> </a>
+          <a href=""
+            ><i class="fa fa-instagram" style="font-size: 33px;"></i>
+          </a>
+        </div>
+
+        <div class="col-md-1 col-md-offset-7 col-sm-2 col-sm-offset-4">
+          <img
+            class="logo-1"
+            src="../Assets/images/brainster_space_logo.svg"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="row footer text-center">
+        <p>
+          <strong>COPYRIGHT &copy; BrainsterSpace. All Rights Reserved</strong>
+        </p>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../Assets/main.js/space-main.js"></script>
+    <!-- <script src="../Assets/main.js/main-main.js"></script> -->
+  </body>
+</html>

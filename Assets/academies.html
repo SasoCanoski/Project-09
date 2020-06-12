@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Project02</title>
+
+    <meta charset="UTF-8" />
+    <meta name="description" content="Front-end Academy  2019" />
+    <meta name="keyword" content="html,css,javascript" />
+    <meta name="author" content="Saso Canoski" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid con-flu">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <button
+          class="navbar-right btn btn-default btn-responsive new-btn"
+          data-toggle="modal"
+          data-target="#myModal"
+        >
+          + ПРИКЛУЧИ СЕ
+        </button>
+          <a href="../index.html"
+            ><img class="nav-img" src="../Assets/images/brainster_space_logo.svg" alt=""
+          /></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav  ul-1">
+            <li class="font-weight-bold">
+              <a href="SpaceBlog.html"
+                ><strong>SPACE БЛОГ</strong>
+                <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li>
+              <a href="calendar.html"><strong>НАСТАНИ</strong></a>
+            </li>
+            <li>
+              <a href="#"><strong>CO-WORKING</strong></a>
+            </li>
+            <li>
+              <a href="#"><strong>АКАДЕМИИ</strong></a>
+            </li>
+            <li>
+              <a href="event.html"><strong>ПРОСТОР ЗА НАСТАНИ</strong></a>
+            </li>
+            <li>
+              <a href="#"><strong>ПАРТНЕРСТВА</strong></a>
+            </li>
+          </ul>
+          <button
+            class="navbar-right btn btn-default btn1-nav btn-responsive"
+            data-toggle="modal"
+            data-target="#myModal"
+          >
+            + ПРИКЛУЧИ СЕ
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      id="myModal"
+      class="modal fade modal-bg-img-1"
+      tabindex="-1"
+      role="dialog"
+    >
+      <div class="modal-dialog " role="document">
+        <div class="modal-content modal-bg-img">
+          <div class="modal-header">
+            <h4 class="modal-title"><strong>BrainsterSpace</strong></h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleName">Име</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleName"
+                  placeholder="Име"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleSurname2">Презиме</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleSurname2"
+                  placeholder="Презиме"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleEmail">Емаил Адреса</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleEmail"
+                  placeholder="Емаил Адреса"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-default btn-form-close"
+              data-dismiss="modal"
+            >
+              Исклучи
+            </button>
+            <button type="button" class="btn btn-default btn1-nav">
+              + ПРИКЛУЧИ СЕ
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid padding1">
+      <!-- AKADEMII -->
+      <div class="row row-event">
+        <div class="col-md-4 md-4-event">
+          <h1>
+            <strong>Академии</strong>
+          </h1>
+          <p>
+            Нашите академии ќе ти помогнат да ги совладаш најбараните вештини на
+            денешницата преку интерактивна настава и практична работа на реални
+            проекти. <br />
+            <br />
+            Инструктори кои се докажани експерти во својата област. Преку нив
+            имаш можност да ги научиш и предвидиш предизвиците на иднината на
+            работење и да се поврзеш со сегашните и идни врвни професионалци и
+            компании. <br />
+            <br />
+            Академиите ќе ти го отворат патот кон кариера каква што посакуваш.
+          </p>
+        </div>
+        <div class="col-md-8">
+          <img
+            src="../Assets/images/IMG_7481.jpg"
+            class="img-responsive img-rounded img-nastani"
+            alt="Responsive image"
+          />
+        </div>
+      </div>
+      <!-- KARTICKI -->
+      <div class="row row-event icon-i">
+        <div class="col-md-4 col-sm-6 morph">
+          <a href="#">
+            <div class=" img-bg-1">
+              <div class="bg-color">
+                <h2>
+                  <strong>
+                    Академија за <br />
+                    графички дизајн</strong
+                  >
+                </h2>
+                <p>
+                  <strong>
+                    <i class="fa fa-address-card"></i>
+
+                    Слободни места: 4</strong
+                  >
+                </p>
+                <p>
+                  <strong>
+                    <i class="fa fa-address-card"></i> Уписи до:
+                    26.08.2019</strong
+                  >
+                </p>
+                <p>
+                  <strong>
+                    <i class="fa fa-address-card"></i> Стани дизајнер за 7
+                    месеци</strong
+                  >
+                </p>
+                <p>
+                  <strong>
+                    <i class="fa fa-address-card"></i> Партнери за вработување:
+                    5</strong
+                  >
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4 col-sm-6 morph">
+            <a href="#">
+          <div class=" img-bg-1">
+            <div class="bg-color-1">
+              <h2>
+                <strong>
+                  Академија за <br />
+                  дигитален маркетинг</strong
+                >
+              </h2>
+              <p>
+                <strong>
+                  <i class="fa fa-address-card"></i>
+
+                  Слободни места: 4</strong
+                >
+              </p>
+              <p>
+                <strong>
+                  <i class="fa fa-address-card"></i> Уписи до:
+                  26.08.2019</strong
+                >
+              </p>
+              <p>
+                <strong>
+                  <i class="fa fa-address-card"></i> Стани дизајнер за 7
+                  месеци</strong
+                >
+              </p>
+              <p>
+                <strong>
+                  <i class="fa fa-address-card"></i> Партнери за вработување:
+                  5</strong
+                >
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div class="col-md-4 col-sm-6 morph">
+        <a href="#">
+          <div class=" img-bg-1">
+            <div class="bg-color-2">
+              <h2>
+                <strong>
+                  Академија за <br />
+                  Front-End програмирање</strong
+                >
+              </h2>
+              <p>
+                <strong>
+                  <i class="fa fa-address-card"></i>
+
+                  Слободни места: 4</strong
+                >
+              </p>
+              <p>
+                <strong>
+                  <i class="fa fa-address-card"></i> Уписи до:
+                  26.08.2019</strong
+                >
+              </p>
+              <p>
+                <strong>
+                  <i class="fa fa-address-card"></i> Стани дизајнер за 7
+                  месеци</strong
+                >
+              </p>
+              <p>
+                <strong>
+                  <i class="fa fa-address-card"></i> Партнери за вработување:
+                  5</strong
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+    </a>
+    
+        <div class="col-md-4 col-sm-6 morph">
+            <a href="#">
+          <div class=" img-bg-1">
+            <div class="bg-color-2">
+              <h2>
+                <strong>
+                  Академија за <br />
+                  Full-Stack програмирање</strong
+                >
+              </h2>
+              <p>
+                <strong>
+                  <i class="fa fa-address-card"></i>
+
+                  Слободни места: 4</strong
+                >
+              </p>
+              <p>
+                <strong>
+                  <i class="fa fa-address-card"></i> Уписи до:
+                  26.08.2019</strong
+                >
+              </p>
+              <p>
+                <strong>
+                  <i class="fa fa-address-card"></i> Стани дизајнер за 7
+                  месеци</strong
+                >
+              </p>
+              <p>
+                <strong>
+                  <i class="fa fa-address-card"></i> Партнери за вработување:
+                  5</strong
+                >
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="col-md-4 col-sm-6 morph">
+            <a href="#">
+          <div class=" img-bg-1">
+            <div class="bg-color">
+              <h2>
+                <strong>
+                  Академија за <br />
+                  Data Science</strong
+                >
+              </h2>
+              <p>
+                <strong>
+                  <i class="fa fa-address-card"></i>
+
+                  Слободни места: 4</strong
+                >
+              </p>
+              <p>
+                <strong>
+                  <i class="fa fa-address-card"></i> Уписи до:
+                  26.08.2019</strong
+                >
+              </p>
+              <p>
+                <strong>
+                  <i class="fa fa-address-card"></i> Стани дизајнер за 7
+                  месеци</strong
+                >
+              </p>
+              <p>
+                <strong>
+                  <i class="fa fa-address-card"></i> Партнери за вработување:
+                  5</strong
+                >
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+        <div class="col-md-4 col-sm-6 morph">
+            <a href="#">
+          <div class=" img-bg-1">
+            <div class="bg-color-1">
+              <h2>
+                <strong>
+                  Академија за <br />
+                  Software Testing</strong
+                >
+              </h2>
+              <p>
+                <strong>
+                  <i class="fa fa-address-card"></i>
+
+                  Слободни места: 4</strong
+                >
+              </p>
+              <p>
+                <strong>
+                  <i class="fa fa-address-card"></i> Уписи до:
+                  26.08.2019</strong
+                >
+              </p>
+              <p>
+                <strong>
+                  <i class="fa fa-address-card"></i> Стани дизајнер за 7
+                  месеци</strong
+                >
+              </p>
+              <p>
+                <strong>
+                  <i class="fa fa-address-card"></i> Партнери за вработување:
+                  5</strong
+                >
+              </p>
+            </div>
+          </div>
+        </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- KONTAKT -->
+    <div class="container-fluid ">
+      <div class="row  r-1">
+        <div class="col-md-1 col-1">
+          <img
+            class="logo-1"
+            src="../Assets/images/brainster_space_logo.svg"
+            alt=""
+          />
+        </div>
+        <div class="col-md-2 col-sm-3 end-contact">
+          <p><strong>Корисни линкови</strong></p>
+
+          <p
+            data-toggle="modal"
+            data-target="#modal-sm"
+            style="cursor: pointer; margin: 0; font-style: italic;"
+          >
+            Контакт
+          </p>
+          <div
+            id="modal-sm"
+            class="modal fade"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="myModalLabel"
+          >
+            <div class="modal-dialog modal-sm" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <h4 class="modal-title" id="myModalLabel">
+                    <strong>Контакт</strong>
+                  </h4>
+                </div>
+                <div class="modal-body">
+                  <p><strong>Емаил: anja@brainster.co</strong></p>
+                  <p><strong>Телефон: 070 233 414 </strong></p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-default"
+                    data-dismiss="modal"
+                    style="background-color: red; color: black; outline: unset;"
+                  >
+                    Исклучи
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://www.wearelaika.com/" target="_blank"
+            >Отворени Позиции</a
+          >
+          <a
+            href="https://medium.com/wearelaika/brainster-space-the-new-home-of-the-local-tech-community-in-skopje-ffe97b564152
+          "
+            target="_blank"
+            >Галерија</a
+          >
+          <a href="calendar.html" target="_blank" class="kalendar">Календар</a>
+        </div>
+
+        <div class="col-md-2 col-sm-3">
+          <p><strong>Социјални Мрежи</strong></p>
+          <a href="#"><i class="fa fa-facebook social fa-2x"></i> </a>
+          <a href=""><i class="fa fa-linkedin fa-2x"></i> </a>
+          <a href=""
+            ><i class="fa fa-instagram" style="font-size: 33px;"></i>
+          </a>
+        </div>
+
+        <div class="col-md-1 col-md-offset-7 col-sm-2 col-sm-offset-4">
+          <img
+            class="logo-1"
+            src="../Assets/images/brainster_space_logo.svg"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="row footer text-center">
+        <p>
+          <strong>COPYRIGHT &copy; BrainsterSpace. All Rights Reserved</strong>
+        </p>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

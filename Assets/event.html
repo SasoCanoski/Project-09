@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Project02</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Front-end Academy  2019" />
+    <meta name="keyword" content="html,css,javascript" />
+    <meta name="author" content="Saso Canoski" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid con-flu">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <button
+          class="navbar-right btn btn-default btn-responsive new-btn"
+          data-toggle="modal"
+          data-target="#myModal"
+        >
+          + ПРИКЛУЧИ СЕ
+        </button>
+          <a href="../index.html"
+            ><img class="nav-img" src="../Assets/images/brainster_space_logo.svg" alt=""
+          /></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav  ul-1">
+            <li class="font-weight-bold">
+              <a href="SpaceBlog.html"
+                ><strong>SPACE БЛОГ</strong>
+                <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li>
+              <a href="calendar.html"><strong>НАСТАНИ</strong></a>
+            </li>
+            <li>
+              <a href="#"><strong>CO-WORKING</strong></a>
+            </li>
+            <li>
+              <a href="academies.html"><strong>АКАДЕМИИ</strong></a>
+            </li>
+            <li>
+              <a href="#"><strong>ПРОСТОР ЗА НАСТАНИ</strong></a>
+            </li>
+            <li>
+              <a href="#"><strong>ПАРТНЕРСТВА</strong></a>
+            </li>
+          </ul>
+          <button
+            class="navbar-right btn btn-default btn1-nav btn-responsive"
+            data-toggle="modal"
+            data-target="#myModal"
+          >
+            + ПРИКЛУЧИ СЕ
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      id="myModal"
+      class="modal fade modal-bg-img-1"
+      tabindex="-1"
+      role="dialog"
+    >
+      <div class="modal-dialog " role="document">
+        <div class="modal-content modal-bg-img">
+          <div class="modal-header">
+            <h4 class="modal-title"><strong>BrainsterSpace</strong></h4>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleName">Име</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleName"
+                  placeholder="Име"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleSurname2">Презиме</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleSurname2"
+                  placeholder="Презиме"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleEmail">Емаил Адреса</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleEmail"
+                  placeholder="Емаил Адреса"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-default btn-form-close"
+              data-dismiss="modal"
+            >
+              Исклучи
+            </button>
+            <button type="button" class="btn btn-default btn1-nav">
+              + ПРИКЛУЧИ СЕ
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- PROSTOR ZA NASTANI -->
+    <div class="container-fluid padding1">
+      <div class="row row-event">
+        <div class="col-md-4 md-4-event">
+          <h1>
+            <strong
+              >ПРОСТОР ЗА <br />
+              НАСТАНИ</strong
+            >
+          </h1>
+          <p>
+            Нашиот простор се прилагодува според потребите на вашиот настан.
+            Седум различни простории и Space Kitchen. <br />
+            <br />
+            Наменски создадени да се прилагодуваат и менуваат во согласност со
+            типот на настанот кој го организирате. <br />
+            <br />
+            Организираме конференции до 150 учесници и обуки и предавања до 20
+            учесници. Контактирај не за да ви хостираме одличен настан.
+          </p>
+          <button id="scroll" class="btn btn-default btn1-nav btn1-nav1">+ БУКИРАЈ НЕ</button>
+        </div>
+        <div class="col-md-8">
+          <img
+            src="../Assets/images/nastani1.jpg"
+            class="img-responsive img-rounded img-nastani"
+            alt="Responsive image"
+          />
+        </div>
+      </div>
+      <!-- NASITE PROSTORII -->
+      <div class="row row-event">
+        <div class="col-md-3 md-3-event">
+          <h1>
+            НАШИТЕ <br />
+            ПРОСТОРИИ
+          </h1>
+          <p>
+            Комплетно адаптибилни. Една сала за 150 учесници и три помали сали
+            за групи од по 50 учесника. Училници за од 25 до 50 учесника. Изброр
+            од две локации. <br />
+            <br />
+            Пулт за прием. И најважното место за networking-Brainster Kitchen.
+            <br />
+            <br />
+            Како го замислувате вашиот следен настан?
+          </p>
+        </div>
+
+        <div class="col-md-9 md-9">
+          <div class="row col-9-row">
+            <div class="col-md-4 col-sm-6">
+              <img src="../Assets/images/2.jpg" alt="" class="img-img" />
+              <p>Brainster</p>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <img
+                src="../Assets/images/C3 EXIBITION_1.jpg"
+                alt=""
+                class="img-img"
+              />
+              <p>Конференциска сала</p>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <img src="../Assets/images/C3 2.jpg" alt="" class="img-img" />
+              <p>Сала со бина</p>
+            </div>
+          
+            <div class="col-md-4 col-sm-6">
+              <img src="../Assets/images/C3 1.jpg" alt="" class="img-img" />
+              <p>Адаптибилна училница</p>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <img src="../Assets/images/C2 1.jpg" alt="" class="img-img" />
+              <p>Училница</p>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <img src="../Assets/images/C1 1.jpg" alt="" class="img-img" />
+              <p>Училница</p>
+            </div>
+          
+            <div class="col-md-4 col-sm-6">
+              <img src="../Assets/images/C1 4.jpg" alt="" class="img-img" />
+              <p>Хол</p>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <img
+                src="../Assets/images/HOL KON SEDENJE.jpg"
+                alt=""
+                class="img-img"
+              />
+              <p>Канцелариски простор</p>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <img
+                src="../Assets/images/KITCHEN_03.jpg"
+                alt=""
+                class="img-img"
+              />
+              <p>Space Kitchen</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SPACE KITCHEN -->
+      <div class="row row-event e-img">
+        <div class="col-md-4 col-sm-4">
+          <img
+            src="..//Assets/images/IMG_7777.jpg"
+            alt=""
+            class="img-responsive"
+          />
+          <div class="row row-r1">
+            <div class="col-md-6 col-sm-6">
+              <img
+                src="../Assets/images/IMG_7385.jpg"
+                alt=""
+                class="img-responsive"
+              />
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <img
+                src="../Assets/images/IMG_7361.jpg"
+                alt=""
+                class="img-responsive"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <img
+            src="../Assets/images/IMG_7362.jpg"
+            alt=""
+            class="img-responsive img-kitchen"
+          />
+        </div>
+        <div class="col-md-4 col-sm-4 pad-top">
+          <h1>Space Kitchen</h1>
+          <p>
+            Место каде сите настани започнуваат и завршуваат. Место каде нашиот
+            тим готви и експериментира. Нашата кујна има само едно правило.
+            <br />
+            <br />
+            Храната мора да биде вегетаријанска. Пијалок, кафе или мезе. Вие
+            одберете кетеринг ние ќе го обезбедиме.
+          </p>
+        </div>
+      </div>
+
+      <div class="row row-event">
+        <div class="col-md-12">
+          <h1>НУДИМЕ</h1>
+        </div>
+        <div class="col-md-12">
+          <p>
+            <span><i class="fa fa-facebook"></i> </span> Простор
+          </p>
+          <p> <span><i class="fa fa-facebook"></i>Space Kitchen</p>
+          <p><span><i class="fa fa-facebook"></i>Логистика</p>
+          <p><span><i class="fa fa-facebook"></i>Техничка Поддршка</p>
+        </div>
+
+        <div class="col-md-12">
+          <p><span><i class="fa fa-facebook"></i>Звук</p>
+          <p><span><i class="fa fa-facebook"></i>Светло</p>
+          <p><span><i class="fa fa-facebook"></i>Помош при Организација</p>
+          <p><span><i class="fa fa-facebook"></i>Видео и Фотографија</p>
+        </div>
+        <div class="col-md-12" >
+          <p><span><i class="fa fa-facebook"></i>Промоција на Социјални Мрежи</p>
+        </div>
+      </div>
+
+      <div class="row row-event" id="section1">
+          <div class="col-md-6 md-66" >
+            <h1 style="margin-bottom: 30px;"><strong>Event Host</strong></h1>
+            <p><strong>Ања Макеска</strong></p>
+            <p><strong>anja@brainster.com</strong></p>
+            <p><strong>+389(0)70 233 414</strong></p>
+          </div>
+          <div class="col-md-6">
+              <img src="../Assets/images/IMG_7362.jpg" class="img-responsive" alt="">
+        </div>
+      </div>
+    </div>
+
+   <!-- KONTAKT -->
+   <div class="container-fluid ">
+    <div class="row  r-1">
+      <div class="col-md-1 col-1">
+        <img
+          class="logo-1"
+          src="../Assets/images/brainster_space_logo.svg"
+          alt=""
+        />
+      </div>
+      <div class="col-md-2 col-sm-3 end-contact">
+        <p><strong>Корисни линкови</strong></p>
+
+        <p
+          data-toggle="modal"
+          data-target="#modal-sm"
+          style="cursor: pointer; margin: 0; font-style: italic;"
+        >
+          Контакт
+        </p>
+        <div
+          id="modal-sm"
+          class="modal fade"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="myModalLabel"
+        >
+          <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                  <strong>Контакт</strong>
+                </h4>
+              </div>
+              <div class="modal-body">
+                <p><strong>Емаил: anja@brainster.co</strong></p>
+                <p><strong>Телефон: 070 233 414 </strong></p>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-default"
+                  data-dismiss="modal"
+                  style="background-color: red; color: black; outline: unset;"
+                >
+                  Исклучи
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="https://www.wearelaika.com/" target="_blank"
+          >Отворени Позиции</a
+        >
+        <a
+          href="https://medium.com/wearelaika/brainster-space-the-new-home-of-the-local-tech-community-in-skopje-ffe97b564152
+        "
+          target="_blank"
+          >Галерија</a
+        >
+        <a href="calendar.html" target="_blank" class="kalendar">Календар</a>
+      </div>
+
+      <div class="col-md-2 col-sm-3">
+        <p><strong>Социјални Мрежи</strong></p>
+        <a href="#"><i class="fa fa-facebook social fa-2x"></i> </a>
+        <a href=""><i class="fa fa-linkedin fa-2x"></i> </a>
+        <a href=""
+          ><i class="fa fa-instagram" style="font-size: 33px;"></i>
+        </a>
+      </div>
+
+      <div class="col-md-1 col-md-offset-7 col-sm-2 col-sm-offset-4">
+        <img
+          class="logo-1"
+          src="../Assets/images/brainster_space_logo.svg"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <div class="row footer text-center">
+      <p>
+        <strong>COPYRIGHT &copy; BrainsterSpace. All Rights Reserved</strong>
+      </p>
+    </div>
+  </div>
+
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"
+    ></script>
+
+
+    <script src="../Assets/main.js/event.js"></script>
+    <!-- <script src="../Assets/main.js/main-main.js"></script> -->
+
+
+  </body>
+</html>
